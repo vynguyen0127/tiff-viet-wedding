@@ -141,6 +141,17 @@ body {
     }
   }
 
+  /* Wedding Party */
+  .col {
+    height: fit-content;
+  }
+  .party-member {
+    margin: auto;
+    width: 90%;
+    padding: 10px;
+    text-align: center;
+  }
+
   /* Footer */
   footer {
     background-image: linear-gradient(black, black);
