@@ -24,12 +24,6 @@ nav {
     max-width: 100%;
 }
 
-/* 
-.nav-item {
-    margin-left: 5%;
-    max-width: fit-content;
-} */
-
 .nav-item h5 {
     background: -webkit-linear-gradient(black,black);
     -webkit-background-clip: text;
@@ -37,9 +31,13 @@ nav {
 }
 
 body {
-    background-color: #fdf1ea
-    ;
+    background-color: #fdf1ea;
 }
+
+.logo-hidden {
+    visibility: gone;
+}
+
 /* Services styles */
 .accordion-container {
     margin: auto;
@@ -215,6 +213,12 @@ input[type="submit"]:hover {
 .menu-preview-item {
     margin-top: 10%;
 }
+
+/* FAQs */
+#faq-where {
+    text-align: center;
+}
+
 /* Gallery */
 .gallery-row {
     display: flex;
@@ -234,7 +238,27 @@ input[type="submit"]:hover {
     vertical-align: middle;
     width: 100%;
   }
+
+  .vy {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+
+  @media (min-width: 768px) {
+    .hidden-nav img{
+        visibility: hidden;
+        width: 1px;
+    }
+  }
   
+  @media (max-width: 767px) {
+    .hidden-nav {
+        visibility: visible;
+    }
+  }
   /* Responsive layout - makes a two column-layout instead of four columns */
   @media screen and (max-width: 800px) {
     .gallery-column {
@@ -253,6 +277,10 @@ input[type="submit"]:hover {
     .home-card{
         height: auto;
         width: 100%;
+    }
+
+    .logo-hidden {
+        visibility: gone;
     }
   }
 
