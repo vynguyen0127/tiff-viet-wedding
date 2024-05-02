@@ -11,23 +11,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-      /* CSS for circle-cropped image */
-      .circle-img {
-        width: 250px;
-        height: 250px;
-        border-radius: 50%;
-        overflow: hidden;
-        margin: 0 auto;
-        margin-bottom: 10px; /* Added margin below image */
-      }
-
-      .circle-img img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-    </style>
   </head>
   <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
@@ -37,27 +20,59 @@
       <h1 data-aos="fade-down" data-aos-duration="1500">Wedding Party</h1>
     </div>
 
-    <div class="party-member" data-aos="fade-right" data-aos-duration="1000">
-      <div class="circle-img">
-        <img class="circle-cropped" src="src/vy-2.JPG">
-      </div>
-      Vy Nguyen
-    </div>
+    <div class="party">
+      <div class="party-left">
+        <div class="party-member" data-aos="fade-right" data-aos-duration="1250">
+          <div class="circle-img">
+            <img class="circle-cropped" src="src/vy-2.JPG">
+          </div>
+          <h2>Vy Nguyen</h2>
+          <p>Sister of the Groom</p>
+        </div>
 
-    <div class="party-member" data-aos="fade-left" data-aos-duration="1000">
-      <div class="circle-img">
-        <img class="circle-cropped" src="src/van-1.jpeg">
-      </div>
-      Van Nguyen
-    </div>
+        <div class="party-member" data-aos="fade-right" data-aos-duration="1250">
+          <div class="circle-img">
+            <img class="circle-cropped" src="src/van-1.jpeg">
+          </div>
+          <h2>Van Nguyen</h2>
+          <p>Brother of the Groom</p>
+        </div>
 
-    <div class="party-member" data-aos="fade-right" data-aos-duration="1000">
-      <div class="circle-img">
-        <img class="circle-cropped" src="src/vinny-1.jpeg">
+        <div class="party-member" data-aos="fade-right" data-aos-duration="1250">
+          <div class="circle-img">
+            <img class="circle-cropped" src="src/vinny-1.jpeg">
+          </div>
+          <h2>Vinny Nguyen</h2>
+          <p>Brother of the Groom</p>
+        </div>
       </div>
-      Vinny Nguyen
+
+      <div class="party-right">
+        <div class="party-member" data-aos="fade-left" data-aos-duration="1250">
+          <div class="circle-img">
+            <img class="circle-cropped" src="src/vy-2.JPG">
+          </div>
+          <h2>Vy Nguyen</h2>
+          <p>Sister of the Groom</p>
+        </div>
+
+        <div class="party-member" data-aos="fade-left" data-aos-duration="1250">
+          <div class="circle-img">
+            <img class="circle-cropped" src="src/van-1.jpeg">
+          </div>
+          <h2>Van Nguyen</h2>
+          <p>Brother of the Groom</p>
+        </div>
+
+        <div class="party-member" data-aos="fade-left" data-aos-duration="1250">
+          <div class="circle-img">
+            <img class="circle-cropped" src="src/vinny-1.jpeg">
+          </div>
+          <h2>Vinny Nguyen</h2>
+          <p>Brother of the Groom</p>
+        </div>
+      </div>
     </div>
-  
   </body>
 
   <script>AOS.init();</script>
