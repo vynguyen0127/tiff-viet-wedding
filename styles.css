@@ -306,6 +306,12 @@ body {
         display: none;
     }
   }
+
+  @media (max-width: 768px) {
+    .carousel-home {
+      width: 30%;
+    }
+  }
   
   @media (max-width: 992px) {
     .hidden-nav img{
