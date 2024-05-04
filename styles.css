@@ -37,6 +37,11 @@ body {
   text-align: center;
 }
 /* Services styles */
+
+.accordion-body {
+  /* margin-left: 5%;
+  margin-right: 5%; */
+}
 .accordion-container {
     margin: auto;
     width: 90%;
@@ -261,7 +266,6 @@ body {
   }
 
 
-
 .engagement-pic {
     margin: auto;
     width: 90%;
@@ -275,6 +279,35 @@ body {
 
 .engagement {
     max-width: 100%;
+}
+
+#rsvpForm {
+  margin: auto;
+  width: 65%;
+  padding: 10px;
+}
+
+#rsvpForm input[type="text"],
+input[type="radio"]  {
+  font-size: 25px;
+}
+
+#rsvpForm input[type="radio"] {
+  transform: scale(1.5); /* Increase the size of the radio buttons */
+  margin-right: 8px; /* Add some spacing between radio buttons and labels */
+}
+
+#rsvpForm input[type="number"] {
+  width: 25%;
+  margin-top: 9px;
+}
+
+#rsvpForm input[type="email"] {
+  width: 40%;
+}
+
+.rsvpName {
+  width: 40%;
 }
 
 .hover-underline-animation {
@@ -333,5 +366,25 @@ body {
 
     .party {
       display: none;
+    }
+
+    #rsvpForm {
+      width: 90%;
+    }
+
+    #rsvpForm input[type="email"] {
+      width: 100%;
+    }
+
+    #rsvpForm input[type="number"] {
+      width: 40%;
+    }
+    
+    .rsvpName {
+      width: 100%;
+    }
+
+    .rsvpYesNo {
+      font-size: 13px;
     }
   }
