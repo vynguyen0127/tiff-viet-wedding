@@ -306,6 +306,14 @@ input[type="radio"]  {
   width: 40%;
 }
 
+.rsvpYesNo {
+  font-size: 25px;
+}
+
+.meal-selection {
+  font-size: 25px;
+}
+
 .rsvpName {
   width: 40%;
 }

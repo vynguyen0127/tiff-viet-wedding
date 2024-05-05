@@ -11,7 +11,7 @@ function addGuests() {
     <input type="text" name="guestName${i}" class="form-control rsvpName" id="guestName${i}">
     <label for="floatingInput">Guest ${i} Full Name</label>
     </div>
-    <label for="attendance${i}">Will Guest ${i} attend?</label>
+    <label class=rsvpYesNo for="attendance${i}">Will Guest ${i} attend?</label>
     <br>
     <input type="radio" id="attendanceYes${i}" name="attendance${i}" value="Yes" onchange="toggleMealSelection(this)" required>
     <label class="rsvpYesNo" for="attendanceYes${i}">Accepts, with pleasure (Will be attending)</label>
@@ -21,17 +21,20 @@ function addGuests() {
     <br>
     <br>
     <div id="mealSelection${i}" class="meal-selection" style="display: none">
-    <label for="meal${i}">Meal Selection for Guest ${i}:</label>
-    <br>
-    <input type="radio" id="mealChicken${i}" name="meal${i}" value="Chicken">
-    <label for="mealChicken${i}">Chicken</label>
-    <br>
-    <input type="radio" id="mealFish${i}" name="meal${i}" value="Fish">
-    <label for="mealFish${i}">Fish</label>
-    <br>
-    <input type="radio" id="mealVegetarian${i}" name="meal${i}" value="Vegetarian">
-    <label for="mealVegetarian${i}">Vegetarian</label>
-    <input type="hidden" id="mealNone${i}" name="meal${i}" value="None"
+        <label for="meal${i}">Meal Selection for Guest ${i}:</label>
+        <br>
+
+        <input type="radio" id="mealChicken${i}" name="meal${i}" value="Chicken">
+        <label for="mealChicken${i}">Chicken</label>
+        <br>
+
+        <input type="radio" id="mealFish${i}" name="meal${i}" value="Fish">
+        <label for="mealFish${i}">Fish</label>
+        <br>
+
+        <input type="radio" id="mealVegetarian${i}" name="meal${i}" value="Vegetarian">
+        <label for="mealVegetarian${i}">Vegetarian</label>
+
     </div>
   </fieldset>
   <br>
@@ -41,15 +44,28 @@ function addGuests() {
 }
 
 function toggleMealSelection(element) {
-const guestNumber = element.id.match(/\d+/)[0];
-const mealSelectionDiv = document.getElementById(`mealSelection${guestNumber}`);
-if (element.value === 'Yes') {
-  mealSelectionDiv.style.display = "initial";
-  mealSelectionDiv.attributes.required = true;
-  mealSelectionDiv.getElementById(`mealNone${guestNumber}`).attributes.checked = false;
-} else {
-  mealSelectionDiv.style.display = "none";
-  mealSelectionDiv.attributes.required = false;
-  mealSelectionDiv.getElementById(`mealNone${guestNumber}`).attributes.checked = true;
-}
+  const guestNumber = element.id.match(/\d+/)[0];
+  const mealSelectionDiv = document.getElementById(`mealSelection${guestNumber}`);
+  if (element.value === 'Yes') {
+    mealSelectionDiv.style.display = "initial";
+    mealSelectionDiv.attributes.required = true;
+  } else {
+    mealSelectionDiv.style.display = "none";
+    mealSelectionDiv.attributes.required = false;
+  }
 } 
+
+function onSubmit(){
+  const numGuests = document.getElementById('numGuests').value;
+  for(let i=1; i <= numGuests; i++){
+    const attendanceNo = document.getElementById(`attendanceNo${i}`)
+    console.log(attendanceNo.checked)
+    if (attendanceNo.checked == true) {
+      document.getElementsByName(`meal${i}`).forEach(
+        function(temp){
+          temp.value = "None";
+        }
+      )
+    } 
+  }
+}
