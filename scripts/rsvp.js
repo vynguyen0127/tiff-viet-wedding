@@ -1,7 +1,7 @@
 function addGuests() {
   const numGuests = document.getElementById('numGuests').value;
   const guestListDiv = document.getElementById('guestList');
-  guestListDiv.innerHTML = ''; // Clear previous content
+  guestListDiv.innerHTML = '';
 
   for (let i = 1; i <= numGuests; i++) {
     const guestDiv = document.createElement('div');
@@ -11,7 +11,7 @@ function addGuests() {
     <input type="text" name="guestName${i}" class="form-control rsvpName" id="guestName${i}">
     <label for="floatingInput">Guest ${i} Full Name</label>
     </div>
-    <label class=rsvpYesNo for="attendance${i}">Will Guest ${i} attend?</label>
+    <label class=rsvpYesNo for="attendance${i}">Guest ${i} Response:</label>
     <br>
     <input type="radio" id="attendanceYes${i}" name="attendance${i}" value="Yes" onchange="toggleMealSelection(this)" required>
     <label class="rsvpYesNo" for="attendanceYes${i}">Accepts, with pleasure (Will be attending)</label>

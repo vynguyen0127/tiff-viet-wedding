@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Freeman&display=swap" rel="stylesheet">
   </head>
   <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
@@ -20,15 +21,21 @@
     
     <script id="replace_with_navbar" src="scripts/navbar.js"></script>
 
+
     <div class="engagement-pic">
-        <h2 class="cormorant-sc-bold" data-aos="fade-down" data-aos-duration="1500"> July 26, 2025 | Saugatuck, MI</h2>
+        <h2 class="cormorant-sc-regular " data-aos="fade-down" data-aos-duration="1500"> July 26, 2025 | Saugatuck, MI</h2>
         <!-- <img class="engagement" src="src/engagement.jpeg" data-aos="fade-up" data-aos-duration="1500"> -->
     </div>
 
     <div data-aos="zoom-in" data-aos-duration="1500">
     <script id="replace_with_carousel" src="scripts/carousel.js"></script>
     </div>
-    <div class="wedding-blurb" data-aos="fade-up"  data-aos-duration="1500">
+
+    <div class="countdown">
+      <h3 data-aos="zoom-in" data-aos-duration="1500" id="demo" class="cormorant-sc-regular "></h3>
+    </div>
+
+    <div class="wedding-blurb  cormorant-sc-regular " data-aos="fade-up"  data-aos-duration="1500">
       <h4>
       Welcome to our wedding website! 
       We're excited to share the details of our big day with you and can't wait to celebrate this special occasion. 
@@ -37,5 +44,6 @@
     </h4>
     </div>
   </body>
+  <script src="scripts/countdown.js"></script>
   <script>AOS.init();</script>
 </html>
