@@ -323,11 +323,11 @@ input[type="radio"]  {
 }
 
 .rsvpYesNo {
-  font-size: 25px;
+  font-size: 21px;
 }
 
 .meal-selection {
-  font-size: 25px;
+  font-size: 21px;
 }
 
 .rsvpName {
@@ -412,8 +412,41 @@ input[type="radio"]  {
       font-size: 13px;
     }
 
+    .meal-selection{
+      font-size: 11px;
+    }
+
     .countdown {
       padding-top: 8%;
       padding-bottom: 8%;
     }
-  }
+  }  
+
+.slider-container {
+    width: 100%;
+    overflow: hidden; /* This hides the overflowing images */
+    position: relative;
+}
+
+.slider-track {
+    display: flex;
+    animation: scroll 9000s linear infinite; /* Apply the scroll animation */
+}
+
+.slider-track img {
+    width: 300px;
+    height: auto;
+    margin-right: 5px;
+    object-fit: cover;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50000%);
+    }
+}
+
+  

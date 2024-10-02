@@ -25,15 +25,15 @@ function addGuests() {
         <br>
 
         <input type="radio" id="mealChicken${i}" name="meal${i}" value="Chicken">
-        <label for="mealChicken${i}">Chicken</label>
+        <label for="mealChicken${i}">Filet Mignon w/ Garlic Mashed Potatoes and Roasted Brussel Sprouts</label>
         <br>
 
         <input type="radio" id="mealFish${i}" name="meal${i}" value="Fish">
-        <label for="mealFish${i}">Fish</label>
+        <label for="mealFish${i}">Salmon Filet w/ Wild Rice and Asparagus</label>
         <br>
 
         <input type="radio" id="mealVegetarian${i}" name="meal${i}" value="Vegetarian">
-        <label for="mealVegetarian${i}">Vegetarian</label>
+        <label for="mealVegetarian${i}">Panko Encrusted Tofu</label>
 
     </div>
   </fieldset>
