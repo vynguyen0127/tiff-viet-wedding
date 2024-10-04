@@ -6,7 +6,7 @@ const cloneImages = () => {
     const containerWidth = sliderTrack.parentElement.offsetWidth;
     let totalWidth = 0;
     
-    while (totalWidth < containerWidth * 3) {
+    while (totalWidth < containerWidth * 5) {
         // Clone all the images inside the slider
         sliderTrack.innerHTML += sliderTrack.innerHTML;
         totalWidth += sliderTrackWidth;
