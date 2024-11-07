@@ -15,3 +15,4 @@ const cloneImages = () => {
 
 // Start the clone process to enable infinite scrolling
 cloneImages();
+``

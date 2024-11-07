@@ -1,3 +1,8 @@
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 .carousel-home {
     width: 35%;
     height: auto;
@@ -13,6 +18,7 @@ section {
 nav {
     padding: 10px;
     background-image: linear-gradient(#fdf1ea, #fdf1ea);
+    font-family: 'Crimson Pro', serif;
 }
 
 .nav-logo {
@@ -44,6 +50,7 @@ body {
   padding-top: 5%;
   padding-bottom: 5%;
   text-align: center;
+  margin-bottom: 10%;
 }
 
 /* Services styles */
@@ -59,12 +66,12 @@ body {
 }
 
 .accordion-container h4{
-  font-family: "Cormorant SC", serif;
+  font-family: "Crimson Pro", serif;
   font-weight: 700;
   font-style: normal;
 }
 body {
-    font-family: "Cormorant SC", serif;
+    font-family: "Crimson Pro", serif;
     margin: 0;
     padding: 0;
 }
@@ -75,7 +82,7 @@ body {
 }
 
 #faq-header h1 {
-    font-family: "Cormorant SC", serif;
+    font-family: "Crimson Pro";
     background: -webkit-linear-gradient(black,black);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -95,7 +102,7 @@ body {
 }
 
 .acc-header h4{
-  font-family: "Cormorant SC", serif;
+  font-family: "Crimson Pro", serif;
   font-weight: 700;
   font-style: normal;
 }
@@ -182,7 +189,7 @@ body {
   }
 
   .party-member h2{
-    font-family: "Cormorant SC", serif;
+    font-family: "Crimson Pro", serif;
     font-weight: 700;
     font-style: normal;
   }
@@ -280,6 +287,14 @@ body {
     font-weight: 400;
     font-style: normal;
   }
+
+  .crimson-pro{
+    font-family: "Crimson Pro", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+  }
+  /* fonts end */
 
 .engagement-pic {
     margin: auto;
