@@ -1,6 +1,7 @@
 html, body {
   max-width: 100%;
   overflow-x: hidden;
+  font-family: 'Crimson Pro', serif;
 }
 
 .carousel-home {
@@ -50,7 +51,7 @@ body {
   padding-top: 5%;
   padding-bottom: 5%;
   text-align: center;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
 
 /* Services styles */
@@ -304,7 +305,7 @@ body {
 }
 
 .engagement-pic h2 {
-    margin-bottom: 5%;
+    margin-bottom: 2%;
 }
 
 .engagement {
