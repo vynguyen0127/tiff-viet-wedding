@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', function () {
     ]
     for (let i = 0; i <= 20; i++) {
         const col = i % 4
-        console.log("test",col)
         const galleryCol = document.getElementById(`gallery-column-${col}`);
         const imageSrc = images[i];
         const imageAlt = `Engagement ${i}`;
