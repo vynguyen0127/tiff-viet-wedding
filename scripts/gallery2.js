@@ -141,62 +141,23 @@ document.addEventListener('DOMContentLoaded', function () {
         image.setAttribute("data-src",imageSrc)
 
         image.addEventListener('click', function() {
-            openFullscreen(image);
+            openPopup(imageSrc);
         });
 
         galleryCol.appendChild(image);
     }
-    // for (let i = 0; i <= 20; i++) {
-    //     const col = i % 4
-    //     const galleryCol = document.getElementById(`gallery-column2-${col}`);
-    //     const imageSrc = images[i];
-    //     const imageAlt = `Engagement ${i}`;
-
-    //     const image = document.createElement('img');
-    //     image.src = imageSrc;
-    //     image.alt = imageAlt;
-    //     // image.setAttribute("data-aos","zoom-in")
-    //     // image.setAttribute("data-aos-duration","2000")
-    //     image.setAttribute("class","lazy")
-    //     image.setAttribute("data-src",imageSrc)
-
-    //     image.addEventListener('click', function() {
-    //         openFullscreen(image);
-    //     });
-
-    //     galleryCol.appendChild(image);
-    // }
-     // Function to open an image in fullscreen
- function openFullscreen(img) {
-    if (img.requestFullscreen) {
-        img.requestFullscreen();
-    } else if (img.mozRequestFullScreen) { // Firefox
-        img.mozRequestFullScreen();
-    } else if (img.webkitRequestFullscreen) { // Chrome, Safari and Opera
-        img.webkitRequestFullscreen();
-    } else if (img.msRequestFullscreen) { // IE/Edge
-        img.msRequestFullscreen();
-    }
-
-    // Optionally, add a class to style the image for fullscreen
-    img.classList.add('fullscreen-image');
-}
-
-// Exit fullscreen mode automatically when the user presses Esc or clicks outside
-document.addEventListener('fullscreenchange', exitFullscreen);
-document.addEventListener('webkitfullscreenchange', exitFullscreen);
-document.addEventListener('mozfullscreenchange', exitFullscreen);
-document.addEventListener('MSFullscreenChange', exitFullscreen);
-
-function exitFullscreen() {
-    const fullscreenElement = document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement;
-
-    // If no element is in fullscreen, remove the fullscreen image styling
-    if (!fullscreenElement) {
-        const images = document.querySelectorAll('.fullscreen-image');
-        images.forEach(img => img.classList.remove('fullscreen-image'));
-    }
+// Function to open an image in fullscreen
+function openPopup(src) {
+    document.getElementById("popupImg").src = src;
+    document.getElementById("popup").style.display = "flex";
 }
 
 });
+
+function closePopup(event) {
+    let popup = document.getElementById("popup");
+    if (event.target === popup || event.target.classList.contains('close')) {
+        popup.style.display = "none";
+    }
+}
 
