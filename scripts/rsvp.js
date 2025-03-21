@@ -34,9 +34,22 @@ function addGuests() {
 
         <input type="radio" id="mealVegetarian${i}" name="meal${i}" value="Panko Encrusted Tofu">
         <label for="mealVegetarian${i}">Panko Encrusted Tofu</label>
-
+        <br>
     </div>
-  </fieldset>
+</fieldset>
+
+<script>
+    function toggleCustomMeal(radio, index) {
+        var customMealInput = document.getElementById("customMeal" + index);
+        if (radio.checked) {
+            customMealInput.style.display = "block";
+            customMealInput.required = true;
+        } else {
+            customMealInput.style.display = "none";
+            customMealInput.required = false;
+        }
+    }
+</script>
   <br>
     `;
     guestListDiv.appendChild(guestDiv);

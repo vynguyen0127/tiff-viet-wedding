@@ -1,0 +1,18 @@
+#faq-header {
+    text-align: center;
+}
+
+#faq-header h1 {
+    font-family: "Crimson Pro";
+    background: -webkit-linear-gradient(black,black);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#faq-where {
+    text-align: center;
+}
+
+#faq-where iframe {
+  width: 600; 
+  height: 450;
+}
