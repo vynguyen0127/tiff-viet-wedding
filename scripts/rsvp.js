@@ -35,6 +35,10 @@ function addGuests() {
         <input type="radio" id="mealVegetarian${i}" name="meal${i}" value="Panko Encrusted Tofu">
         <label for="mealVegetarian${i}">Panko Encrusted Tofu</label>
         <br>
+
+        <input type="radio" id="mealOther${i}" name="meal${i}" value="Other" onchange="toggleCustomMeal(this, ${i})">
+        <label for="mealOther${i}">Other (Please specify):</label>
+        <input type="text" id="customMeal${i}" name="customMeal${i}" placeholder="Enter your meal choice">
     </div>
 </fieldset>
 

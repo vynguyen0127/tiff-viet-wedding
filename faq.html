@@ -16,7 +16,9 @@
 
   <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script id="replace_with_navbar" src="scripts/navbar.js"></script>
+    <div data-aos="fade-down" data-aos-duration="1500">
+        <script id="replace_with_navbar" src="scripts/navbar.js"></script>
+      </div>
 
     <div id="faq-header">
     <h1 data-aos="fade-down" data-aos-duration="1500">FAQs</h1>
@@ -24,11 +26,11 @@
     <div class="accordion-container open-sans"  data-aos="zoom-in" data-aos-duration="1000">
         <div class="accordion" id="accordionExample">
             <div class="accordion-item">
-            <h2 class="accordion-header cormorant-sc-bold">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-where" aria-expanded="true" aria-controls="faq-where">
-                <h4>Where is the wedding taking place?</h5>
-                </button>
-            </h2>
+                <h2 class="accordion-header cormorant-sc-bold">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-where" aria-expanded="true" aria-controls="faq-where">
+                    <h4>Where is the wedding taking place?</h5>
+                    </button>
+                </h2>
             <div id="faq-where" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                 <h3>Ivy House</h3>
                 <a href="https://www.ivyhousemi.com/" target="_blank"><h5>https://www.ivyhousemi.com/</h5></a>
@@ -39,42 +41,137 @@
             </div>
             </div>
             <div class="accordion-item">
-            <h2 class="accordion-header cormorant-sc-bold">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-               <h4>Is the wedding taking place indoors or outdoors?</h4>
-                </button>
-            </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body cormorant-sc-regular">
-                    <h5>Both! We will be having the ceremony and reception indoors, but plenty of outdoor areas will be available with activities and photo opportunities.</h5>
+                <h2 class="accordion-header cormorant-sc-bold">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseTwo">
+                   <h4>What is the dress code?</h4>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body cormorant-sc-regular">
+                        <h5>We would love to see our family and friends get dressed up for our big day! We are requesting formal cocktail attire (semi-formal). </h5>
+                    </div>
                 </div>
-            </div>
-            </div>
-            <div class="accordion-item">
-            <h2 class="accordion-header cormorant-sc-bold">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                <h4>Will there be an open bar?</h4>
-                </button>
-            </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body cormorant-sc-regular">
-                    <h5>Yes! Drinks are on us, hangover is on you<span style='font-size:25px;'>&#129346;</span></h5>
-                </div>
-            </div>
             </div>
             <div class="accordion-item">
                 <h2 class="accordion-header cormorant-sc-bold">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                    <h4>Who made this super awesome website?</h4>
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                   <h4>What time should I arrive?</h4>
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body cormorant-sc-regular">
+                        <h5>The ceremony will begin at 4:00PM. Please arrive no later than 3:50PM to be seated.</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header cormorant-sc-bold">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseTwo">
+                   <h4>How do I RSVP?</h4>
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body cormorant-sc-regular">
+                        <h5>To RSVP, please click the RSVP tab here on our website. Enter in how many guests are in your party and the names of those accepting and/or declining. Those who are attending will need to select a meal choice.</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header cormorant-sc-bold">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseTwo">
+                   <h4>When is the RSVP deadline?</h4>
                     </button>
                 </h2>
                 <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                     <div class="accordion-body cormorant-sc-regular">
-                        <img class="vy" src="src/vy.JPG">
-                        (Vy did.)
+                        <h5>Please kindly RSVP by June 1st! If you do not RSVP in time, we will assume that you are unable to attend.</h5>
                     </div>
                 </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header cormorant-sc-bold">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseTwo">
+                   <h4>What should I do if I can't attend?</h4>
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body cormorant-sc-regular">
+                        <h5>You will be missed! If you cannot attend our wedding, please indicate your regrets in our RSVP tab so we can plan accordingly.</h5>
+                    </div>
                 </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header cormorant-sc-bold">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
+                    <h4>Will there be an open bar?</h4>
+                    </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body cormorant-sc-regular">
+                        <h5>YES! Liquor, beer, wines, signature cocktails, and non-alcoholic beverages will be available. The drinks are on us, the hangover is on you! <span style='font-size:25px;'>&#129346;</span></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header cormorant-sc-bold">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseTwo">
+                   <h4>Can I bring a guest/date?</h4>
+                    </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body cormorant-sc-regular">
+                        <h5>We have accounted for plus ones for those that we are expecting to see by your side! If you are unsure if we've accounted for a plus one for you, please reach out to us.</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header cormorant-sc-bold">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseTwo">
+                   <h4>Will the wedding take place indoors or outdoors?</h4>
+                    </button>
+                </h2>
+                <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body cormorant-sc-regular">
+                        <h5>Both! The ceremony and reception will be held indoors. Cocktail hour will be enjoyed outdoors with activities and photo opportunities.</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header cormorant-sc-bold">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseTwo">
+                   <h4>Is there parking at the venue?</h4>
+                    </button>
+                </h2>
+                <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body cormorant-sc-regular">
+                        <h5>Yes, there is parking available on site.</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header cormorant-sc-bold">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTwo">
+                   <h4>Do you have a wedding registry?</h4>
+                    </button>
+                </h2>
+                <div id="collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body cormorant-sc-regular">
+                        <h5>Your presence alone is enough for us! However, if you would like to contribute to our future together, please visit the <a href="registry.html">Registry</a> tab for more information.</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header cormorant-sc-bold">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseTwo">
+                   <h4>Have a question that you don't see an answer to?</h4>
+                    </button>
+                </h2>
+                <div id="collapseEleven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body cormorant-sc-regular">
+                        <h5>Please reach out to us and we will get you the info you need! :) </h5>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
   </body>

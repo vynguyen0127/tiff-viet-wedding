@@ -1,0 +1,78 @@
+.registry-tab {
+    max-width: 80%;
+    margin: 40px auto;
+    background: #fff;
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.registry-tab h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 12px;
+}
+.registry-tab p {
+    font-size: 20px;
+    color: #555;
+    line-height: 1.6;
+    font-weight: 700;
+}
+.registry-tab .donation-box {
+    background: #f8f9fa;
+    padding: 16px;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+.registry-tab .donation-box h3 {
+    font-size: 20px;
+    color: #34495e;
+    margin-bottom: 10px;
+}
+.donation-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 16px;
+}
+.donation-method {
+    background: #fff;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    width: 45%;
+}
+.donation-method p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 8px;
+}
+.qr-code img {
+    width: 300px;
+    height: 300px;
+    border-radius: 8px;
+    margin-top: 8px;
+}
+.registry-tab .note {
+    font-style: italic;
+    margin-top: 20px;
+    color: #7f8c8d;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 600px) {
+    .donation-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .donation-method {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+    .qr-code img {
+        width: 250px;
+        height: 250px;
+    }
+}
