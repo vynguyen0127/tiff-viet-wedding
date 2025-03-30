@@ -245,3 +245,9 @@ input[type="radio"]  {
   color: white;
   cursor: pointer;
 }
+
+.engagement-pic {
+  display: block;
+  margin: auto;
+  width: 50%;
+}
