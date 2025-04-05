@@ -38,7 +38,7 @@ function addGuests() {
 
         <input type="radio" id="mealOther${i}" name="meal${i}" value="Other" onchange="toggleCustomMeal(this, ${i})">
         <label for="mealOther${i}">Other (Please specify):</label>
-        <input type="text" id="customMeal${i}" name="customMeal${i}" placeholder="Enter your meal choice">
+        <input class="custom" type="text" id="customMeal${i}" name="customMeal${i}" placeholder="Enter your meal choice">
     </div>
 </fieldset>
 
@@ -84,5 +84,13 @@ function onSubmit(){
         }
       )
     } 
+  }
+}
+
+function toggleCustomMeal(radio, index) {
+  const customInput = document.getElementById(`customMeal${i}`);
+  if (radio.checked) {
+      // Set the radio's value to the current input
+      radio.value = customInput.value;
   }
 }
