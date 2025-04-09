@@ -25,20 +25,20 @@ function addGuests() {
         <br>
 
         <input type="radio" id="mealChicken${i}" name="meal${i}" value="Filet Mignon w/ Garlic Mashed Potatoes">
-        <label for="mealChicken${i}">Filet Mignon w/ Garlic Mashed Potatoes and Roasted Brussel Sprouts</label>
+        <label for="mealChicken${i}">Filet Mignon w/ Garlic Mashed Potatoes and Roasted Brussel Sprouts (GF)</label>
         <br>
 
         <input type="radio" id="mealFish${i}" name="meal${i}" value="Salmon Filet w/ Wild Rice and Asparagus">
-        <label for="mealFish${i}">Salmon Filet w/ Wild Rice and Asparagus</label>
+        <label for="mealFish${i}">Salmon Filet w/ Wild Rice and Asparagus (GF)</label>
         <br>
 
         <input type="radio" id="mealVegetarian${i}" name="meal${i}" value="Panko Encrusted Tofu">
-        <label for="mealVegetarian${i}">Panko Encrusted Tofu</label>
+        <label for="mealVegetarian${i}">Panko Encrusted Tofu (V)</label>
         <br>
 
         <input type="radio" id="mealOther${i}" name="meal${i}" value="Other" onchange="toggleCustomMeal(this, ${i})">
         <label for="mealOther${i}">Other (Please specify):</label>
-        <input class="custom" type="text" id="customMeal${i}" name="customMeal${i}" placeholder="Enter your meal choice">
+        <input class="form-floating mb-3" type="text" id="customMeal${i}" name="customMeal${i}" placeholder="Enter your meal choice">
     </div>
 </fieldset>
 
