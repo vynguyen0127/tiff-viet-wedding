@@ -23,22 +23,26 @@ function addGuests() {
     <div id="mealSelection${i}" class="meal-selection" style="display: none">
         <label for="meal${i}">Meal Selection for Guest ${i}:</label>
         <br>
+        <div class="radio-group">
+        <input type="radio" id="mealChicken${i}" name="meal${i}" value="Filet Mignon w/ Roasted Garlic Mashed Potatoes and Herb Grilled Squash Medley">
+        <label for="mealChicken${i}">Filet Mignon w/ Roasted Garlic Mashed Potatoes and Herb Grilled Squash Medley (GF)</label>
+         </div>
+    
+            <div class="radio-group">
+        <input type="radio" id="mealFish${i}" name="meal${i}" value="Salmon Filet w/ Garlic Mashed Potatoes and Honey-Miso Lacquered Carrots">
+        <label for="mealFish${i}">Salmon Filet w/ Garlic Mashed Potatoes and Honey-Miso Lacquered Carrots(GF)</label>
+         </div>
 
-        <input type="radio" id="mealChicken${i}" name="meal${i}" value="Filet Mignon w/ Garlic Mashed Potatoes">
-        <label for="mealChicken${i}">Filet Mignon w/ Garlic Mashed Potatoes and Roasted Brussel Sprouts (GF)</label>
-        <br>
-
-        <input type="radio" id="mealFish${i}" name="meal${i}" value="Salmon Filet w/ Wild Rice and Asparagus">
-        <label for="mealFish${i}">Salmon Filet w/ Wild Rice and Asparagus (GF)</label>
-        <br>
-
+         <div class="radio-group"> 
         <input type="radio" id="mealVegetarian${i}" name="meal${i}" value="Panko Encrusted Tofu">
         <label for="mealVegetarian${i}">Panko Encrusted Tofu (V)</label>
-        <br>
+        </div>
 
+        <div class="radio-group">
         <input type="radio" id="mealOther${i}" name="meal${i}" value="Other" onchange="toggleCustomMeal(this, ${i})">
         <label for="mealOther${i}">Other (Please specify):</label>
         <input class="form-floating mb-3" type="text" id="customMeal${i}" name="customMeal${i}" placeholder="Enter your meal choice">
+        </div>
     </div>
 </fieldset>
 
