@@ -8,7 +8,7 @@ function addGuests() {
     guestDiv.innerHTML = `
     <fieldset>
     <div class="form-floating mb-3">
-    <input type="text" name="guestName${i}" class="form-control rsvpName" id="guestName${i}">
+    <input type="text" name="guestName${i}" class="form-control rsvpName" id="guestName${i}" required>
     <label for="floatingInput">Guest ${i} Full Name</label>
     </div>
     <label class=rsvpYesNo for="attendance${i}">Guest ${i} Response:</label>
@@ -24,7 +24,7 @@ function addGuests() {
         <label for="meal${i}">Meal Selection for Guest ${i}:</label>
         <br>
         <div class="radio-group">
-        <input type="radio" id="mealChicken${i}" name="meal${i}" value="Filet Mignon w/ Roasted Garlic Mashed Potatoes and Herb Grilled Squash Medley">
+        <input type="radio" id="mealChicken${i}" name="meal${i}" value="Filet Mignon w/ Roasted Garlic Mashed Potatoes and Herb Grilled Squash Medley" required>
         <label for="mealChicken${i}">Filet Mignon w/ Roasted Garlic Mashed Potatoes and Herb Grilled Squash Medley (GF)</label>
          </div>
     
