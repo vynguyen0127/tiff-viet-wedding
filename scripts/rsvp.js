@@ -38,11 +38,11 @@ function addGuests() {
         <label for="mealVegetarian${i}">Panko Encrusted Tofu (V)</label>
         </div>
 
-        <div class="radio-group">
+
         <input type="radio" id="mealOther${i}" name="meal${i}" value="Other" onchange="toggleCustomMeal(this, ${i})">
         <label for="mealOther${i}">Other (Please specify):</label>
         <input class="form-floating mb-3" type="text" id="customMeal${i}" name="customMeal${i}" placeholder="Enter your meal choice">
-        </div>
+
     </div>
 </fieldset>
 
