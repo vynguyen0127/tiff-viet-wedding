@@ -30,7 +30,7 @@ function addGuests() {
     
             <div class="radio-group">
         <input type="radio" id="mealFish${i}" name="meal${i}" value="Salmon Filet w/ Garlic Mashed Potatoes and Honey-Miso Lacquered Carrots">
-        <label for="mealFish${i}">Salmon Filet w/ Garlic Mashed Potatoes and Honey-Miso Lacquered Carrots(GF)</label>
+        <label for="mealFish${i}">Salmon Filet w/ Garlic Mashed Potatoes and Honey-Miso Lacquered Carrots (GF)</label>
          </div>
 
          <div class="radio-group"> 
