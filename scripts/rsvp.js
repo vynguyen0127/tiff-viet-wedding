@@ -29,13 +29,13 @@ function addGuests() {
          </div>
     
             <div class="radio-group">
-        <input type="radio" id="mealFish${i}" name="meal${i}" value="Salmon Filet w/ Garlic Mashed Potatoes and Honey-Miso Lacquered Carrots">
-        <label for="mealFish${i}">Salmon Filet w/ Garlic Mashed Potatoes and Honey-Miso Lacquered Carrots (GF)</label>
+        <input type="radio" id="mealFish${i}" name="meal${i}" value="Salmon Filet w/ Roasted Garlic Mashed Potatoes and Honey-Miso Lacquered Carrots">
+        <label for="mealFish${i}">Salmon Filet w/ Roasted Garlic Mashed Potatoes and Honey-Miso Lacquered Carrots (GF)</label>
          </div>
 
          <div class="radio-group"> 
-        <input type="radio" id="mealVegetarian${i}" name="meal${i}" value="Panko Encrusted Tofu">
-        <label for="mealVegetarian${i}">Panko Encrusted Tofu (V)</label>
+        <input type="radio" id="mealVegetarian${i}" name="meal${i}" value="Panko Encrusted Tofu w/ Sautéed Wild Mushrooms, Kimchi, and Fermented Aioli">
+        <label for="mealVegetarian${i}">Panko Encrusted Tofu w/ Sautéed Wild Mushrooms, Kimchi, and Fermented Aioli (V)</label>
         </div>
 
 
